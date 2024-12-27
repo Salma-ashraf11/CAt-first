@@ -1,0 +1,12 @@
+void main() {
+  // Initial list with duplicates
+  List<int> numbers = [10, 20, 23, 45, 96, 10, 21, 22, 21];
+
+  // Remove duplicates by converting to a Set and back to a List
+  List<int> uniqueNumbers = numbers.toSet().toList();
+
+  // Reverse the list
+  uniqueNumbers = uniqueNumbers.reversed.toList();
+
+  print(uniqueNumbers); // Output the result
+}
